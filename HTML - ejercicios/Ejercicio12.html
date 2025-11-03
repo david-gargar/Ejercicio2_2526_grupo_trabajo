@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rellena tu CV</title>
+</head>
+<body>
+    <h3>Rellena tu CV</h3>
+    <form action="recibir.php" method="post">
+        <label for="nombre">Nombre</label><br>
+        <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre Aquí" required>
+        <br>
+        <label for="Apellidos">Apellidos</label><br>
+        <input type="text" name="Apellidos" id="Apellidos" placeholder="Tus Apellidos Aquí" required>
+        <br>
+        <label for="contrasena">Contraseña: </label><br>
+        <input type="password" name="contraseña" id="contrasena">
+        <br>
+        <label for="DNI">DNI</label><br>
+        <input type="text" name="DNI" id="DNI" placeholder="Tu DNI" required>
+        <br>
+        <label>Género:</label>
+        <br><br>
+        <input type="radio" id="generohombre" name="genero" value="hombre">
+        <label for="generoHombre">Hombre</label>
+        <br>
+        <input type="radio" id="generoMujer" name="genero" value="mujer">
+        <label for="generoMujer">Mujer</label>
+        <br><br>
+        <label for="archivo">Incluir mi foto </label>
+        <input type="file" name="archivo" id="archivo">
+        <br><br>
+        <input type="checkbox" id="boletin" name="boletin" value="boletin">
+        <label for="futbol">Suscribirme al boletin de novedades</label>
+        <br><br>
+        <input type="submit" value="Guardar cambios"/>
+        <input type="reset" value="Borrar los datos introducidos">
+    </form>
+</body>
+</html>
