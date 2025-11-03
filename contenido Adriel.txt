@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" width="500">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td colspan="3">4</td>
+            <!--<td>5</td>-->
+        </tr>
+        <tr>
+            <td rowspan="4"><img src="https://gregoriofer.com/logo.jpg"></td>
+            <td rowspan="2">2</td>
+            <td>
+                <ul>
+                    <li>A</li>
+                    <ul>
+                        <li>B</li>
+                        <li>C</li>
+                    </ul>
+                    <li>D</li>
+                </ul>
+            </td>
+            <td colspan="2" rowspan="2">4</td>
+            <!--<td>5</td>-->
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="2">1</td>
+            <!--<td >2</td>
+        <td >3</td>
+        <td >4</td>
+        <td>5</td>-->
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td rowspan="2">fin</td>
+            <!--<td>3</td>
+        <td>4</td>
+        <td>5</td>-->
+        </tr>
+        <tr>
+            <td>1</td>
+            <!--<td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>-->
+        </tr>
+    </table>
+
+</body>
+
+</html>
