@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Tabla reproducida (HTML sin CSS)</title>
+</head>
+<body>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <!-- Columna izquierda: 1 -->
+    <td rowspan="4" valign="top">1</td>
+
+    <!-- Segunda columna superior: 2 -->
+    <td rowspan="2" valign="top">2</td>
+
+    <!-- Columna estrecha intermedia: 3 -->
+    <td rowspan="4" valign="top">3</td>
+
+    <!-- Área superior derecha: 4 (ocupa dos celdas para simular ancho) -->
+    <td colspan="2" valign="top">4</td>
+  </tr>
+
+  <tr>
+    <!-- fila 2: debajo de 4 hay una celda grande (izquierda) y otra columna a la derecha vacía -->
+    <td colspan="1" valign="top">
+      <!-- Celda grande con lista anidada -->
+      <ul style="margin:0; padding-left:18px;">
+        <li>A</li>
+        <ul style="margin:0; padding-left:18px; list-style-type:circle;">
+          <li>B</li>
+          <li>C</li>
+        </ul>
+        <li>D</li>
+      </ul>
+    </td>
+    <td rowspan="3" valign="top"></td>
+  </tr>
+
+  <tr>
+    <!-- fila 3: debajo de las columnas 1 y 2 aparece una celda horizontal larga -->
+    <!-- Nota: la columna "2" tenía rowspan=2, por eso aquí ya no aparece -->
+    <td colspan="3" valign="top" style="height:80px;"> <!-- celda central amplia -->
+      <!-- contenido central vacío (simula el rectángulo ancho debajo de la lista) -->
+    </td>
+  </tr>
+
+  <tr>
+    <!-- fila 4: derecha abajo hay tres pequeñas celdas apiladas (simuladas con una tabla dentro) -->
+    <td colspan="1" valign="top">
+      <!-- en la parte inferior izquierda de la segunda columna podríamos dejar un espacio -->
+    </td>
+
+    <td valign="top">
+      <!-- caja pequeña apilada (simulando las 3 cajas pequeñas en la esquina inferior derecha) -->
+      <table border="1" cellpadding="3" cellspacing="0">
+        <tr><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td></tr>
+      </table>
+    </td>
+
+    <!-- la última columna derecha ya está ocupada por rowspan anterior -->
+  </tr>
+</table>
+
+</body>
+</html>
